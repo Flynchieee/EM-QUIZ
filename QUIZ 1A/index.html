@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Quiz - Start Screen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="background-container">
+      <div class="floating-particle particle-1"></div>
+      <div class="floating-particle particle-2"></div>
+      <div class="floating-particle particle-3"></div>
+      <div class="floating-particle particle-4"></div>
+      <div class="floating-particle particle-5"></div>
+      <div class="floating-particle particle-6"></div>
+    </div>
+
+    <!-- Pixel Character (coder vibe - green shirt) -->
+    <div class="pixel-character">
+      <div class="pixel-head">
+        <div class="pixel-eye left"></div>
+        <div class="pixel-eye right"></div>
+      </div>
+      <div
+        style="display: flex; justify-content: center; gap: 4px; height: 24px"
+      >
+        <div class="pixel-arm left"></div>
+        <div
+          class="pixel-body"
+          style="
+            margin: 0;
+            background: linear-gradient(135deg, #00ff88, #00aa44);
+          "
+        ></div>
+        <div class="pixel-arm right"></div>
+      </div>
+      <div class="pixel-legs">
+        <div class="pixel-leg left"></div>
+        <div class="pixel-leg right"></div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <h1 class="title">Programming Quiz</h1>
+      <p class="subtitle">Test Your Coding Skills</p>
+
+      <div class="glass-card">
+        <h2>Welcome to CodeChallenge</h2>
+        <p>
+          Challenge yourself with programming questions and sharpen your
+          development skills.
+        </p>
+        <div class="features-grid">
+          <div class="feature-item">💻 Code</div>
+          <div class="feature-item">🐛 Debug</div>
+          <div class="feature-item">🚀 Deploy</div>
+        </div>
+      </div>
+
+      <button class="start-button" id="startBtn">
+        <span class="button-text">Start Quiz</span>
+      </button>
+    </div>
+
+    <!-- Loading Animation -->
+    <div class="loading-container" id="loadingContainer">
+      <div style="position: relative">
+        <div class="loader"></div>
+        <p class="loading-text">Loading...</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
